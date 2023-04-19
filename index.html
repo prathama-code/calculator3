@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator.css" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="calculator">
+        <div>
+            <button onclick="changeMode()" class="toggele-btn" ><i class="fa fa-moon-o" aria-hidden="true"></i></button>
+        </div>
+        <div class="display">
+            <input type="text" placeholder="0" id="inputText">
+        </div>
+        <div class="btn">
+            <div class="buttons">
+                <button class="AC" onclick="clr()">AC</button>
+                <button class="DEL" onclick="del()">DEL</button>
+                <button class="mod" onclick="calculate('%')">%</button>
+                <button class="plus" onclick="calculate('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button onclick="calculate(7)">7</button>
+                <button onclick="calculate(8)">8</button>
+                <button onclick="calculate(9)">9</button>
+                <button onclick="calculate('/')" class="div">/</button>
+            </div>
+            <div class="buttons">
+                <button onclick="calculate(4)">4</button>
+                <button onclick="calculate(5)">5</button>
+                <button onclick="calculate(6)">6</button>
+                <button onclick="calculate('-')" class="sub">-</button>
+            </div>
+            <div class="buttons">
+                <button onclick="calculate(1)">1</button>
+                <button onclick="calculate(2)">2</button>
+                <button onclick="calculate(4)">3</button>
+                <button onclick="calculate('*')" class="mul">*</button>
+            </div>
+            <div class="buttons">
+                <button onclick="calculate('00')">00</button>
+                <button onclick="calculate(0)">0</button>
+                <button onclick="calculate('.')">.</button>
+                <button onclick="Result()" class="eql">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
